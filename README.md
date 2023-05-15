@@ -76,3 +76,15 @@ GYM BATTLE - WATER/GRASS
 set out to adventure, choose a path-
 wildfire, storm, snowy mountain
 catch respective legendary bird
+
+
+Welcome to game
+Enter name
+story
+Choose Pokemon
+path 1 path 2
+encounter pokemon 1 or pokemon 2
+path 3 path 4
+encounter 3 or 4
+encounter an eevee
+choose stone for evolution 
