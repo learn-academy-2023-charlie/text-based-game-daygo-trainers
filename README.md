@@ -46,3 +46,33 @@ Think about the difference between `p` and `puts`. Using `p` in development is h
 Keep your code simple. You have all the tools you need to effectively construct the game. This is an exercise in organization, planning, and creativity.
 
 Have fun! This medium is prime for easter eggs and (class appropriate) inside jokes.
+
+
+Pokemon Amethyst
+
+Character wakes up, chooses Pokemon
+Charmander, Squirtle or Eevee
+
+This town is out of pokeballs, you gotta head to next town market to buy some and catch pokemon.
+Professor oak gives us two pokeballs
+
+heads out, runs into wild pidgey
+catch, flee and maybe add fight
+
+general concept
+start in National City, move to La Mesa, end in Carmel Valley
+battle gym in each town
+GYM BATTLE - PSYCHIC/GHOST
+team rocket dilemma in between towns
+leave town, choose between path, encounter based on path chosen, ex water pokemon near river
+battle system, fight , catch or flee
+arrive in la mesa, goes to gym
+GYM BATTLE - GROUND/NORMAL type
+win or lose and try again
+leave town, choose path, choose path
+team rocket dilemma
+arrive carmel valley
+GYM BATTLE - WATER/GRASS
+set out to adventure, choose a path-
+wildfire, storm, snowy mountain
+catch respective legendary bird
