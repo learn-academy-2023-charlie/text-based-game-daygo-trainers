@@ -23,24 +23,28 @@ puts "                                `'                            '-._|"
 
 puts 'Are you ready to start this adventure?'
     response = gets.chomp
-    
+    puts "\n"
     if response == 'yes'
       type_out("Wonderful! What is your Trainer name? ", 0.03)
+        puts "\n"
     elsif response == 'no'
       type_out('but the Pokemon of the world need you to catch them! What is your Trainer name? ', 0.03)
+        puts "\n"
     else
       type_out('ok ok ok... but what is your name? ', 0.03)
+        puts "\n"
     end
     
     user_name = gets.chomp
-
+    puts "\n"
     type_out("Professor Oak: Nice to meet you, #{user_name}, I am Professor Oak and you can choose one starter Pokemon to begin your journey! \n \n", 0.03)
-        
+        puts "\n"      
     type_out('Choose: Bulbasaur, Charmander or Squirtle? ', 0.03)
 
     starter = gets.chomp
 
     if starter == 'Bulbasaur'
+        puts "\n"
         
         printf("                                           /\n");
         printf("                        _,.------....___,.' ',.-.\n");
@@ -73,6 +77,7 @@ puts 'Are you ready to start this adventure?'
         printf("\n");
         printf("\n");
     elsif starter == 'Charmander' 
+        puts "\n"
 
             printf("              _.--\"\"`-..\n");
             printf("            ,'          `.\n");
@@ -111,7 +116,8 @@ puts 'Are you ready to start this adventure?'
             printf("\n");
             printf("\n");
     elsif starter == 'Squirtle'
-        
+        puts "\n"
+
             printf("               _,........__\n");
             printf("            ,-'            \"`-.\n");
             printf("          ,'                   `-.\n");
@@ -150,23 +156,24 @@ puts 'Are you ready to start this adventure?'
         
             
     type_out("You chose: #{starter}! \n \n", 0.03)
-
-    type_out("Professor Oak: Ah excellent! the Pokemon #{starter} is a dependable partner! \n Now that you have your very own Pokemon, you can set out on an adventure to the next town and purchase some PokeBalls. \n Here's a few to get you started! \n \n", 0.03)
+        puts "\n"
+    type_out("Professor Oak: Ah excellent! the Pokemon #{starter} is a dependable partner!\nNow that you have your very own Pokemon, you can set out on an adventure to the next town and purchase some PokeBalls. Here's a few to get you started! \n \n", 0.03)
 
     poke_balls = 2
     type_out("You have #{poke_balls} PokeBalls!", 0.03)
 
-    puts "\n \n"
+        puts "\n \n"
 
-    type_out("As you exit the town and begin your journey, you come across two paths, a rocky path through the hills, or a winding path through the forest. \n \n Which path do you take? \n \n", 0.03)
-
+    type_out("As you exit the town and begin your journey, you come across two paths, a rocky path through the hills, or a winding path through the forest.\n \nWhich path do you take? \n \n", 0.03)
     type_out("rocky or winding? ", 0.03)
-
+        puts "\n"
     path_one_or_two = gets.chomp
         case path_one_or_two
         when 'rocky' 
-            p 'You ran into a Geodude!'
-            
+                puts "\n"
+            type_out("You ran into a Geodude!", 0.03)
+                puts "\n"
+
                 printf("                                            _,.---.\n");
                 printf("                                        _,-'       `.\n");
                 printf("                                     _,'  ,          \\\n");
@@ -201,9 +208,12 @@ puts 'Are you ready to start this adventure?'
                 printf("                         `--.....,-\"' \n");
             
                 
-            wild_pokemon = 'Geodude'
+            wild_pokemon2 = 'Geodude'
         when 'winding'
-            p 'You ran into a Butterfree!'
+                puts "\n"
+            type_out('You ran into a Butterfree!', 0.03)
+                puts "\n"
+
             printf("       ,-.                                            ___.._\n");
             printf(" _     `. `.                                    _,-\"\"\"      ',._\n");
             printf("`.`.      `.\\                                _,'         _..-'  `.\n");
@@ -241,19 +251,21 @@ puts 'Are you ready to start this adventure?'
             printf("                   |  /  |   /           `-------'\n");
             printf("                   l /   \\_,'\n");
             printf("                    \" \n");
-            wild_pokemon = 'Butterfree'
+            wild_pokemon2 = 'Butterfree'
         else 
             type_out('choose your path!', 0.03)
+                puts "\n"
         end 
   
-        type_out('catch or flee?', 0.03)
+        type_out('catch or flee? ', 0.03)
         catch_or_flee1 = gets.chomp
             if catch_or_flee1 == 'catch'
                 poke_balls -= 1
-                type_out("You caught a #{wild_pokemon}!", 0.03)
-                puts "\n \n"
+                    puts "\n"
+                type_out("You caught a #{wild_pokemon2}!", 0.03)
+                    puts "\n \n"
                 type_out("You have #{poke_balls} PokeBalls left", 0.03)
-                puts "\n \n"
+                    puts "\n \n"
             elsif catch_or_flee1 == 'flee'
                type_out('You escaped!', 0.03)
             else
@@ -265,12 +277,14 @@ puts 'Are you ready to start this adventure?'
     type_out("Path one leads to a vast plains and path two leads down a rushing river", 0.03)
     puts "\n \n"
 
-    type_out("plains or river?", 0.03)
+    type_out("plains or river? ", 0.03)
 
     path_three_or_four = gets.chomp
         case path_three_or_four
-        when 'plains' 
+        when 'plains'
+                puts "\n" 
             type_out('You ran into a Pikachu!', 0.03)
+            puts "\n"
             printf("                                             ,-.\n");
             printf("                                          _.|  '\n");
             printf("                                        .'  | /\n");
@@ -314,10 +328,14 @@ puts 'Are you ready to start this adventure?'
             printf("                 .'          /\n");
             printf("               ,'           /\n");
             printf("             _'....----\"\"\"\"\" \n");
-            wild_pokemon == 'Pikachu'
+
+                puts "\n"
+            wild_pokemon3 = 'Pikachu'
         when 'river'
+                puts "\n"
             type_out('You ran into a Magikarp!', 0.03)
-            
+                puts "\n" 
+
                 printf("\n");
                 printf("\n");
                 printf("                                 __.--.._,-'\"\"-.\n");
@@ -353,47 +371,66 @@ puts 'Are you ready to start this adventure?'
                 printf("   /_,'_,-'\n");
                 printf(" .'_.-'\n");
                 printf(" '\"\n");
-            
+
                 
-            wild_pokemon == 'Magikarp'
+            wild_pokemon3 = 'Magikarp'
         else 
+                puts "\n"
             type_out('choose your path!', 0.03)
         end 
-
-        type_out('catch or flee?', 0.03)
+            puts "\n"
+        type_out('catch or flee? ', 0.03)
+            puts "\n"
         catch_or_flee2 = gets.chomp
             if catch_or_flee2 == 'catch'
                 poke_balls -= 1
-                type_out("You caught a #{wild_pokemon}", 0.03)
+                puts "\n"
+                type_out("You caught a #{wild_pokemon3}", 0.03)
+                puts "\n \n"
                 type_out("You have #{poke_balls} PokeBalls left", 0.03)
+                puts "\n"
             elsif catch_or_flee2 == 'flee'
                 type_out('You escaped!', 0.03)
+                puts "\n"
             else
                 type_out('Not a valid choice!', 0.03)
+                puts "\n"
             end
-
+            puts "\n"
             type_out('You have arrived in La Mesa and restocked 4 PokeBalls', 0.03)
+            puts "\n \n"
             poke_balls += 4
             type_out("you have #{poke_balls} PokeBalls", 0.03)
+            puts "\n \n"
 
-            p 'As you are leaving town, a mysterious vender approches you'
-            p 'Mysterious Vendor: Tell me, do you want a fire, water or lightning stone?'
-            p 'Choose fire, water or lightning'
+            type_out('As you are leaving town, a mysterious vender approches you', 0.03)
+            puts "\n \n"
+            type_out('Mysterious Vendor: Tell me, do you want a fire, water or lightning stone?', 0.03)
+            puts "\n \n"
+            type_out('Choose fire, water or lightning', 0.03)
+            puts "\n"
             stone = gets.chomp
+            puts "\n \n"
                 if stone == 'fire'
-                    p 'You obtained fire stone!'
+                    type_out('You obtained fire stone!', 0.03)
+                    puts "\n \n"
                 elsif stone == 'water'
-                    p 'You obtained water stone!'
+                    type_out('You obtained water stone!', 0.03)
+                    puts "\n \n"
                 elsif stone == 'lightning'
-                    p 'You obtained lightning stone!'
+                    type_out('You obtained lightning stone!', 0.03)
+                    puts "\n \n"
                 end
 
-            p 'Continuing our journey, we run into a wild Eevee! They seem to want to join our party!'
-            p 'You caught an Eevee!'
-            p 'The stone is reacting to the Eevee...'
+            type_out('Continuing our journey, we run into a wild Eevee! They seem to want to join our party!', 0.03)
+            puts "\n \n"
+            type_out('You caught an Eevee!', 0.03)
+            puts "\n \n"
+            type_out('The stone is reacting to the Eevee...', 0.03)
+            puts "\n \n"    
+            type_out('Eevee is evolving!',0.03)
+            puts "\n \n"
 
-            p 'Eevee is evolving!'
-            
                 printf("\n");
                 printf("                                      |\n");
                 printf("                                     /|\n");
@@ -570,16 +607,20 @@ puts 'Are you ready to start this adventure?'
     printf("              XHHX\n");
 
                 end
-
-p 'Continuing on our journey, we come across a three different paths.. path one you see a fire in the distance, path two leads up a snow capped mountain, and path three looks like there is a storm brewing'
-p 'Which path do you take?'
-p 'fire, ice, lightning?'
+    puts "\n \n"
+type_out('Continuing on our journey, we come across three different paths.. path one you see a fire in the distance, path two leads up a snow capped mountain, and path three looks like there is a storm brewing', 0.03)
+    puts "\n \n"
+type_out('Which path do you take?', 0.03)
+    puts "\n \n"
+type_out('fire, ice, lightning?', 0.03)
+    puts "\n \n"
 
 path_one_or_two_or_three = gets.chomp
         case path_one_or_two_or_three
         when 'fire' 
-            p 'You ran into a Moltes!'
-            
+            type_out('You ran into a Moltes!', 0.03)
+            puts "\n \n"
+
                 printf("                                                                                                 `  \n");
                 printf("                                                                                               ``.. \n");
                 printf("       `                                                                                    `.-  -  \n");
@@ -621,10 +662,11 @@ path_one_or_two_or_three = gets.chomp
                 printf("                                                   `.   ``                                          \n");
             
                
-            wild_pokemon = 'Moltres'
+            wild_pokemon4 = 'Moltres'
         when 'ice'
-            p 'You ran into a Articuno!'
-            
+            type_out('You ran into a Articuno!', 0.03)
+            puts "\n \n"
+
     printf("    :--:.                                                                                .--/`      \n");
     printf("    +   -:.                                                                           .::.  --      \n");
     printf("    -:    -:`                                                                    .:///.   `/:       \n");
@@ -692,10 +734,11 @@ path_one_or_two_or_three = gets.chomp
     printf("                              --+o/:-.``...`                                                        \n");
     printf("                                 `-::///::---.                                                      \n");
     printf("                                              `   \n");
-            wild_pokemon = 'Articuno'
+            wild_pokemon4 = 'Articuno'
         when 'lightning'
-            p 'You ran into a Zapdos!'
-            
+            type_out('You ran into a Zapdos!', 0.03)
+                puts "\n \n"
+
                 printf("\n");
                 printf("                                                                                                .-:o:\n");
                 printf("                       /-                                                                `------:-  \n");
@@ -734,19 +777,24 @@ path_one_or_two_or_three = gets.chomp
                 printf("                                               /:        `        \n");
             
                 
-            wild_pokemon = 'Zapdos'
+            wild_pokemon4 = 'Zapdos'
         else 
-            p 'choose your path!'
+            type_out('choose your path!', 0.03)
+                puts "\n \n"
         end 
 
-        p 'catch or flee?'
+        type_out( 'catch or flee?', 0.03)
+            puts "\n \n"
         catch_or_flee_birds = gets.chomp
             if catch_or_flee_birds == 'catch'
                 poke_balls -= 1
-                p "You caught a #{wild_pokemon}"
-                p "You have #{poke_balls} PokeBalls left"
+                type_out("You caught a #{wild_pokemon4}", 0.03)
+                    puts "\n \n"
+                type_out( "You have #{poke_balls} PokeBalls left", 0.03)
+                    puts "\n \n"
             elsif catch_or_flee_birds == 'flee'
-               p 'You escaped!'
+               type_out( 'You escaped!', 0.03)
+               puts "\n \n"
             else
                 'Not a valid choice!'
             end
