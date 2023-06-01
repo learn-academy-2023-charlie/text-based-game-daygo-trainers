@@ -76,7 +76,7 @@ puts 'Are you ready to start this adventure?'
         printf(" `\"^--'..'   '-`-^-'\"--    `-^-'`.''\"\"\"\"\"`.,^.`.--' \n");
         printf("\n");
         printf("\n");
-    elsif starter == 'Charmander' 
+    elsif starter == 'Charmander'
         puts "\n"
 
             printf("              _.--\"\"`-..\n");
@@ -165,11 +165,11 @@ puts 'Are you ready to start this adventure?'
         puts "\n \n"
 
     type_out("As you exit the town and begin your journey, you come across two paths, a rocky path through the hills, or a winding path through the forest.\n \nWhich path do you take? \n \n", 0.03)
-    type_out("rocky or winding? ", 0.03)
+    type_out("Rocky or Winding? ", 0.03)
         puts "\n"
     path_one_or_two = gets.chomp
         case path_one_or_two
-        when 'rocky' 
+        when 'Rocky' 
                 puts "\n"
             type_out("You ran into a Geodude!", 0.03)
                 puts "\n"
@@ -209,7 +209,7 @@ puts 'Are you ready to start this adventure?'
             
                 
             wild_pokemon2 = 'Geodude'
-        when 'winding'
+        when 'Winding'
                 puts "\n"
             type_out('You ran into a Butterfree!', 0.03)
                 puts "\n"
